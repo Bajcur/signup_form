@@ -8,8 +8,8 @@
 body {
     margin: 0;
     min-height: 100vh;
-    width: 100vw;
     display: flex;
+    background-color: whitesmoke;
 }
 
 .background {
@@ -50,14 +50,49 @@ body {
     font-weight: 600;
     display: flex;
     flex-direction: column;
+    width: 70vw;
 }
 
 .header {
-    margin-left: 50px;
+    margin: 0;
+    height: 150px;
+    padding: 50px 0 0 50px;
+    max-width: 600px;
 }
 
 span {
     font-style: italic;
 }
 
+fieldset {
+    position: relative;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0px;
+    padding: 50px 0 50px 50px;
+    max-width: 400px;
+}
 
+.fieldset {
+    background-color: white;
+    box-shadow: 0px 5px 5px 0px #999189;
+    
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+legend {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}
+
+label {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10px;
+}
