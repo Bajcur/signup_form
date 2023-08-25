@@ -47,13 +47,13 @@ body {
 .main {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    font-weight: 600;
     display: flex;
     flex-direction: column;
     width: 70vw;
 }
 
 .header {
+    font-weight: 600;
     margin: 0;
     height: 150px;
     padding: 50px 0 0 50px;
@@ -72,7 +72,7 @@ fieldset {
     gap: 30px;
     margin: 0px;
     padding: 50px 0 50px 50px;
-    max-width: 400px;
+    max-width: 500px;
 }
 
 .fieldset {
@@ -87,6 +87,7 @@ fieldset {
 }
 
 legend {
+    font-weight: 600;
     position: absolute;
     top: 10px;
     left: 50px;
@@ -95,4 +96,66 @@ legend {
 label {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 10px;
+    margin-bottom: 4px;
+}
+
+input{
+    margin-right: 50px;
+    outline: none;
+    width: 180px;
+    box-sizing: border-box;
+    border: solid 1px;
+    border-radius: 2px;
+    border-color: #E5E7EB;
+    padding: 4px 0 4px 6px;
+}
+
+input:invalid{
+    border-color: red;
+}
+
+
+input:focus {
+    border-color: blue;
+    box-shadow: 0px 5px 5px 0px #999189;
+}
+
+
+input + span {
+    position: relative;
+  }
+  
+input:required + span::after {
+    font-size: 0.7rem;
+    position: absolute;
+    content: "* Passwords have to match";
+    color: red;
+    right: 50px;
+}
+
+input:valid + span::after{
+    content: "";
+}
+
+button {
+    margin: 20px 0 20px 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(0, 191, 255);
+    width: 170px;
+    height: 35px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 5px 5px 0px #999189;
+}
+
+.footer {
+    margin-left: 50px;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 191, 255);
 }
